@@ -30,7 +30,24 @@
 
                                     {{{ body }}}
 
-                                    <div id="comment" class="margin-top-40">
+                                    <div class="you-may-also-like margin-top-50 margin-bottom-50">
+                                        <h3>Читайте также</h3>
+                                        <div class="row">
+
+                                            {{#each randomPosts}}
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <a href="/post{{_id}}">
+                                                    <p>{{title}}
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            {{/each}}
+
+                                        </div>
+                                    </div>
+
+                                    <div id="comment" class="margin-top-40 comment">
+                                        <h3>Оставь комментарий</h3>
                                         <div id="mc-container"></div>
                                         <script type="text/javascript">
                                             cackle_widget = window.cackle_widget || [];
@@ -85,6 +102,7 @@
 
     <!-- Main Javascript File  -->
     <script type="text/javascript" src="js/scripts.js"></script>
+
 
 
 </body>

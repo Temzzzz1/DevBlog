@@ -5,11 +5,24 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const path = require('path');
 const exphbs = require('express-handlebars')
+
 const hbs = exphbs.create({
+    helpers: {
+        times: (n, block) => {
+            var accum = '';
+            for(var i = 1; i <= n; ++i) {
+                block.data.index = i;
+                accum += block.fn(this);
+            }
+            return accum;
+        }
+    },
     layoutsDir: "views/layouts",
     defaultLayout: 'main',
     extname: 'hbs'
 })
+
+
 
 const PORT = process.env.PORT || 3000
 
@@ -24,6 +37,8 @@ app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'views')
 app.use(express.static(path.join(__dirname, 'resources')))
+
+
 
 
 // Routes

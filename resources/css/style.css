@@ -1804,3 +1804,8 @@ blockquote {
 .uipasta-credit a:hover {
     color: #333333;
 }
+
+.pages-pagination {
+    text-align: center;
+}
+

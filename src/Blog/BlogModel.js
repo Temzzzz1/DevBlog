@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose')
 
+
 const schema = new Schema({
     title: {
         type: String,
@@ -18,5 +19,6 @@ const schema = new Schema({
         required: true
     },
 })
+
 
 module.exports = model('Blog', schema)
