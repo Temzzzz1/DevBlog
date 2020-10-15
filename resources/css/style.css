@@ -1240,7 +1240,11 @@ blockquote {
        position: inherit;
        width: auto;
     }
-	
+    
+    .read-next {
+        font-size: 20px;
+    }
+    
     .post-quote {
        width: 90%;
     }
