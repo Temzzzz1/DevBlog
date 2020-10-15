@@ -1168,7 +1168,7 @@ blockquote {
     font-size: 40px;
     color: #1abc9c;
     position: fixed;
-    right: 20px;
+    right: 40px;
     bottom: 50px;
     z-index: 999;
     transition: all 0.3s ease-in-out;
