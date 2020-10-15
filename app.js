@@ -18,7 +18,7 @@ const hbs = exphbs.create({
         }
     },
     layoutsDir: "views/layouts",
-    defaultLayout: 'main',
+    defaultLayout: 'blog',
     extname: 'hbs'
 })
 

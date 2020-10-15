@@ -114,8 +114,19 @@ button {
 }
 
 .sub-title {
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+.sub-title-post {
+    padding: 30px !important;
+}
+
+.sub-title-post i {
+    margin-top: 15px !important;
+}
+
 
 .sub-title h2 {
     display: inline-block;
@@ -129,6 +140,7 @@ button {
     float: right;
     font-size: 35px;
     margin-top: 15px;
+    padding-right: 30px;
 }
 
 .content-page {
@@ -1809,3 +1821,12 @@ blockquote {
     text-align: center;
 }
 
+.search-blog {
+    display: inline-block;
+    padding: 5px;
+}
+
+.search-blog i {
+    float: right;
+    padding-right: 30px !important;
+}

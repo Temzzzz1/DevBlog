@@ -19,6 +19,12 @@
                         <div class="row">
                             <div class="col-md-12 content-page">
 
+                                {{#if isSearch}}
+                                <div class="sub-title">
+                                    <h2>Результаты поиска:</h2>
+                                </div>
+                                {{/if}}
+
                                 {{{ body }}}
 
 

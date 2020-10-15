@@ -21,4 +21,5 @@ const schema = new Schema({
 })
 
 
+
 module.exports = model('Blog', schema)
