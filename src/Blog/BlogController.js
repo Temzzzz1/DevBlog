@@ -56,7 +56,7 @@ module.exports.loadPage = async (req, res) => {
 
 module.exports.loadPost = async (req, res) => {
     const postsCount = await Blog.find().estimatedDocumentCount()
-    const randomPosts = await Blog.find({}, {}, {
+    const randomPosts = await Blog.find({ _id: {$ne: req.params.id}}, {}, {
         skip: Math.random() * Math.floor(postsCount),
         limit: 3
     }).lean()

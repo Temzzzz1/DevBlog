@@ -30,10 +30,12 @@
 
                                     {{{ body }}}
 
+                                    {{#if randomPosts}}
                                     <div class="you-may-also-like margin-top-50 margin-bottom-50">
                                         <h3>Читайте также</h3>
                                         <div class="row">
 
+                                        
                                             {{#each randomPosts}}
                                             <div class="col-md-4 col-sm-6 col-xs-12">
                                                 <a href="/post{{_id}}">
@@ -42,9 +44,12 @@
                                                 </a>
                                             </div>
                                             {{/each}}
+                                        
+
 
                                         </div>
                                     </div>
+                                    {{/if}}
 
                                 </div>
                             </div>
