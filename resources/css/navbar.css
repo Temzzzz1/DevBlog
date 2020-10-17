@@ -18,6 +18,7 @@
 .line {
 	width: 97%;
 	border-bottom: 3px solid #F0F0F0;
+	color: #F0F0F0;
 	transform: translateY(-5px);
 	margin: 0 auto;
 }
