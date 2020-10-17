@@ -8,6 +8,14 @@
     </div>
     <!-- Preloader End -->
 
+    <nav>
+        <a class="menu__icon mobile"><span></span></a>
+        <ul class="menu mobile">
+            <li><a href="/" class="menu__item">Blog</a></li>
+            <li><a href="/portfolio" class="menu__item">Portfolio</a></li>
+        </ul>
+    </nav>
+
     <div id="main">
         <div class="container">
             <div class="row">
@@ -35,7 +43,7 @@
                                         <h3>Читайте также</h3>
                                         <div class="row">
 
-                                        
+
                                             {{#each randomPosts}}
                                             <div class="col-md-4 col-sm-6 col-xs-12">
                                                 <a href="/post{{_id}}">
@@ -44,7 +52,7 @@
                                                 </a>
                                             </div>
                                             {{/each}}
-                                        
+
 
 
                                         </div>
