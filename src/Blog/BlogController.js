@@ -64,8 +64,10 @@ module.exports.loadPost = async (req, res) => {
     res.render('post', {
         title: 'Rusanov | ' + blog.title,
         layout: 'post',
+        isPost: true,
         blog,
-        randomPosts
+        randomPosts,
+      
     })
 }
 

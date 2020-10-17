@@ -120,7 +120,7 @@ button {
 }
 
 .sub-title-post {
-    padding: 30px !important;
+    padding: 20px 30px!important;
 }
 
 .sub-title-post i {
@@ -651,7 +651,7 @@ div.blog-post {
     font-size: 16px;
     line-height: 30px;
     color: #696868;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.4px;
     font-family: "Roboto", sans-serif;
 }

@@ -16,11 +16,21 @@
         </ul>
     </nav>
 
+
+
     <div id="main">
         <div class="container">
             <div class="row">
 
                 {{> navbar}}
+
+                <style>
+                    @media only screen and (max-width: 991px) {
+                        .about-fixed {
+                            display: none !important;
+                        }
+                    }
+                </style>
 
                 <div class="col-md-9">
                     <div class="col-md-12 page-body">
