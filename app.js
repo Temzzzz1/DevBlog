@@ -43,8 +43,10 @@ app.use(express.static(path.join(__dirname, 'resources')))
 
 // Routes
 const blogRoute = require('./src/Blog/BlogRoute')
+const portfolioRoute = require('./src/Portfolio/PortfolioRoute')
 
 app.use(blogRoute)
+app.use(portfolioRoute)
 
 async function start() {
     try {
@@ -56,7 +58,6 @@ async function start() {
             useUnifiedTopology: true,
         }).then(console.log('Database connected...'))
         .catch('Cannot connect to DB')
-        
 
         // Start server
         app.listen(PORT, () => {
