@@ -2,23 +2,17 @@
     {{#each posts}}
     <div class="col-md-12">
 
-        <style>
-            .card {
-                background: 
-            }
-        </style>
-        
         <a href="{{repURL}}" target="_blank">
-            <div style="background: url({{imageURL}}); 
+            <div id="cards-bg" style="background: url({{imageURL}}); 
                         background-repeat: no-repeat;
                         background-position: right 10% bottom 50%;
-                        background-size: {{imageSize}};" 
+                        background-size: {{imageSize}};"
                         class="card">
                 <h3>{{title}}</h3>
                 <p>{{text}}</p>
             </div>
         </a>
-        
+
     </div>
     {{/each}}
 </div>

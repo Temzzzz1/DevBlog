@@ -1,6 +1,16 @@
 @media only screen and (min-width: 992px) {
     .cards {
         margin: 2em 1em;
+        
+    }
+    
+   
+}
+
+@media only screen and (max-width: 479px) {
+	
+    #cards-bg {
+        background-size: 10em !important;
     }
 }
 
@@ -33,6 +43,7 @@
     right: 15px;
     max-height: 120px;
 }
+
 
 .cards a {
     color: #000000; 
