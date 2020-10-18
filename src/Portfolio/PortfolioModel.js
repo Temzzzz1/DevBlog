@@ -10,10 +10,18 @@ const schema = new Schema({
         type: String,
         required: true 
     },
-    stack: {
+    imageURL: {
         type: String,
         required: true
     },
+    imageSize: {
+        type: String,
+        required: true
+    },
+    repURL: {
+        type: String,
+        required: true
+    }
 })
 
 module.exports = model('Portfolio', schema)

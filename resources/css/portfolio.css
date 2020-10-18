@@ -1,5 +1,7 @@
-.cards {
-    margin: 2em 1em;
+@media only screen and (min-width: 992px) {
+    .cards {
+        margin: 2em 1em;
+    }
 }
 
 .card {
@@ -18,7 +20,11 @@
 }
 
 .card h3 {
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.card p {
+    font-weight: 500;
 }
 
 .card img {
@@ -28,26 +34,11 @@
     max-height: 120px;
 }
 
-.card-1 {
-    background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
+.cards a {
+    color: #000000; 
 }
 
-.card-2 {
-    background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
 
-.card-3 {
-    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}
 
 @media(max-width: 990px) {
     .card {
