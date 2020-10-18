@@ -3,12 +3,9 @@
         margin: 2em 1em;
         
     }
-    
-   
 }
 
 @media only screen and (max-width: 767px) {
-     
     #cards-bg {
         background-size: 15em !important;
     }
@@ -16,7 +13,6 @@
 
 
 @media only screen and (max-width: 479px) {
-	
     #cards-bg {
         background-size: 10em !important;
     }
