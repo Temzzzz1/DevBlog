@@ -297,6 +297,7 @@ button {
     padding: 10px;
     margin: 0;
     text-align: center;
+    display: inline-flex;
 }
 
 .menu-link:before,
